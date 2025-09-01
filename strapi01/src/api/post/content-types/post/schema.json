@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Posts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "ShowHome": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "new",
+        "feature"
+      ]
+    },
+    "CustomPublish": {
+      "type": "datetime",
+      "required": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "posts"
+    },
+    "SeoSettings": {
+      "type": "component",
+      "component": "seo.seo",
+      "repeatable": false
+    },
+    "ReviewList": {
+      "type": "component",
+      "component": "reviews.reviews",
+      "repeatable": true
+    },
+    "password": {
+      "type": "string",
+      "private": true
+    }
+  }
+}

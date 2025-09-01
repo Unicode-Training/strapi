@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meta_categories",
+  "info": {
+    "singularName": "meta-category",
+    "pluralName": "meta-categories",
+    "displayName": "Meta_Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

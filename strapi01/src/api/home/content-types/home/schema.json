@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Builder": {
+      "type": "dynamiczone",
+      "components": [
+        "reviews.reviews",
+        "category.category",
+        "title.title"
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_category_categories",
+  "info": {
+    "displayName": "Category",
+    "icon": "chartPie"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    }
+  },
+  "config": {}
+}

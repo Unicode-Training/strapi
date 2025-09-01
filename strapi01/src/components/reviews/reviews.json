@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reviews_reviews",
+  "info": {
+    "displayName": "Reviews",
+    "icon": "chartCircle"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

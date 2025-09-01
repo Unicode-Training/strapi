@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "SeoTitle": {
+      "type": "string"
+    },
+    "SeoDescription": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

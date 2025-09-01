@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_title_titles",
+  "info": {
+    "displayName": "Title",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
