@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import Google from "./pages/Google";
 import Github from "./pages/Github";
+import Demo from "./pages/Demo";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/auth/google" element={<Google />} />
       <Route path="/auth/github" element={<Github />} />
+      <Route path="/demo" element={<Demo />}/>
     </Routes>
   );
 }
